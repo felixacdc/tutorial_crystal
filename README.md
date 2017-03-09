@@ -1,2 +1,2 @@
-# tutorial_crystal
-Tutorial Crystal Reports C# por MaLeX1492
+# Tutorial Crystal
+Reportes parametrizados con Visual C# y MS Sql Server -desde cero por Otto Córdova
