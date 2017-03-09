@@ -60,7 +60,14 @@ ALTER TABLE [dbo].[Productos] CHECK CONSTRAINT [FK_Productos_Categorias2]
 GO
 -- Fin de crear tabal productos
 
--- Consulta para el reporte
+-- ********** Consultas para el reporte ************
+
+-- Query para reporte estandar
+Select pro.NombreProducto,cat.NombreCategoria,pro.PrecioUnitario,pro.UnidadesEnExistencia 
+From Productos pro inner join Categorias2 cat
+On pro.IdCategoria = cat.id;
+-- Query para reporte parametrisado
 Select pro.NombreProducto,cat.NombreCategoria,pro.PrecioUnitario,pro.UnidadesEnExistencia 
 From Productos pro inner join Categorias2 cat
 On pro.IdCategoria = cat.id
+WHERE cat.NombreCategoria = 'Carnes';
