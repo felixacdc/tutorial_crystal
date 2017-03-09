@@ -15,5 +15,10 @@ namespace Tutorial_Crystal_Reports_C
         {
             InitializeComponent();
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
